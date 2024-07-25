@@ -33,10 +33,11 @@ def indexURL(urls, http):
         if "error" in result:
             print("Error({} - {}): {}".format(result["error"]["code"], result["error"]["status"], result["error"]["message"]))
         else:
-            print("urlNotificationMetadata.url: {}".format(result["urlNotificationMetadata"]["url"]))
-            print("urlNotificationMetadata.latestUpdate.url: {}".format(result["urlNotificationMetadata"]["latestUpdate"]["url"]))
-            print("urlNotificationMetadata.latestUpdate.type: {}".format(result["urlNotificationMetadata"]["latestUpdate"]["type"]))
-            print("urlNotificationMetadata.latestUpdate.notifyTime: {}".format(result["urlNotificationMetadata"]["latestUpdate"]["notifyTime"]))
+            print(result)
+            # print("urlNotificationMetadata.url: {}".format(result["urlNotificationMetadata"]["url"]))
+            # print("urlNotificationMetadata.latestUpdate.url: {}".format(result["urlNotificationMetadata"]["latestUpdate"]["url"]))
+            # print("urlNotificationMetadata.latestUpdate.type: {}".format(result["urlNotificationMetadata"]["latestUpdate"]["type"]))
+            # print("urlNotificationMetadata.latestUpdate.notifyTime: {}".format(result["urlNotificationMetadata"]["latestUpdate"]["notifyTime"]))
 
 """
 data.csv has 2 columns: URL and date.
